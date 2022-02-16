@@ -1,6 +1,7 @@
 *{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: Lato;
     margin: 0;
+    font-size: 12px;
 }
 
 body {
@@ -35,4 +36,41 @@ body {
 
 .three{
     background-color: yellow;
+}
+
+nav{
+    background-color:grey;
+    padding-left: 40px;
+    padding-right: 40px;
+    
+}
+
+nav ul{
+    list-style-type:none;
+    padding-inline-start: 0px;
+}
+
+nav a{
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    display: block;
+    padding: 5px;
+}
+
+nav a:hover{
+    color: rgb(185, 185, 185);
+}
+
+@media screen and (min-width: 1000px) {
+    
+    nav ul{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    nav li{
+        flex: 1 1 0;
+    }
 }
